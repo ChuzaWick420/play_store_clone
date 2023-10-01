@@ -1,5 +1,6 @@
 .devices{
   display: flex;
+  gap: 1rem;
 }
 
 .device{
@@ -12,3 +13,4 @@
   align-items: center;
   gap: 0.5rem;
 }
+
