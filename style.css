@@ -35,4 +35,9 @@
   position: relative;
 }
 
-
+.bigCardImgHolder{
+  position: absolute;
+  background-color: red;
+  inset: 2%;
+  border-radius: calc(1rem - 2%);
+}
