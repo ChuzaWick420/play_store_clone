@@ -10,3 +10,8 @@ nav a {
     height: 50px;
     margin: 10px;
 }
+
+nav h2 {
+    display: inline-block;
+    color: rgb(95, 99, 104);
+}
