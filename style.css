@@ -16,7 +16,7 @@ nav h2 {
     color: rgb(95, 99, 104);
 }
 
-nav div {
+nav div, nav div a{
     display: flex;
     align-items: center;
 }
