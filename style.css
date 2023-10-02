@@ -22,9 +22,19 @@ nav h2 {
   color: rgb(95, 99, 104);
 }
 
-nav div, nav div a{
+nav div, nav div a, .miscellaneous{
   display: flex;
   align-items: center;
+}
+
+.miscellaneous{
+	margin-left: auto;
+}
+
+.miscellaneous button{
+	border: none;
+	background-color: white;
+	margin: 10px;
 }
 
 nav {
