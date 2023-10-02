@@ -23,7 +23,7 @@
   display: flex;
 } 
 
-.bigCards::-webkit-scrollbar{
+.bigCards::-webkit-scrollbar {
   display: none;
 }
 
