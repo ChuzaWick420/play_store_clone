@@ -1,27 +1,27 @@
 nav a {
-    text-decoration: none;
-    color: rgb(95, 99, 104);
-    margin: 10px;
-    font-size: 16px;
+  text-decoration: none;
+  color: rgb(95, 99, 104);
+  margin: 10px;
+  font-size: 16px;
 }
 
 nav a:hover {
-    color: rgb(32, 33, 36);
-    transition: 0.5s;
+  color: rgb(32, 33, 36);
+  transition: 0.5s;
 }
 
 .play_logo {
-    width: 50px;
-    height: 50px;
-    margin: 10px;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
 }
 
 nav h2 {
-    display: inline-block;
-    color: rgb(95, 99, 104);
+  display: inline-block;
+  color: rgb(95, 99, 104);
 }
 
 nav div, nav div a{
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
