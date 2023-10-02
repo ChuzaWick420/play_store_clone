@@ -24,7 +24,7 @@
 } 
 
 .bigCards::-webkit-scrollbar{
-  display: none;
+  display: none ;
 }
 
 .bigCard{
