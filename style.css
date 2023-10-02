@@ -3,6 +3,7 @@ nav a {
   color: rgb(95, 99, 104);
   margin: 10px;
   font-size: 16px;
+	font-weight: bold;
 }
 
 nav a:hover {
@@ -24,4 +25,8 @@ nav h2 {
 nav div, nav div a{
   display: flex;
   align-items: center;
+}
+
+nav {
+	font-family: 'Roboto', sans-serif;
 }
