@@ -17,9 +17,10 @@ nav a:hover {
 }
 
 .play_logo {
-	width: 50px;
-	height: 50px;
-	margin: 10px;
+	width: 40px;
+	height: 40px;
+	margin: 18px;
+	margin-top: 12px;
 }
 
 nav h2 {
