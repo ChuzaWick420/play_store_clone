@@ -15,12 +15,13 @@ body {
 	border-radius: 100vh;
 	display: flex;
 	align-items: center;
+	margin: 15px;
+	margin-right: 0px;
 	gap: 0.5rem;
 }
 
 .bigCards{
 	padding: 0.2rem;
-	margin-top: 30px;
 	width: calc(100vw - 16px); /* default body margin : 8px. left and right total 16px */
 	height: 340px;
 	overflow: scroll;
