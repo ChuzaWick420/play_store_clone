@@ -5,6 +5,7 @@ body {
 .devices {
 	display: flex;
 	gap: 1rem;
+	margin-left: 72px;
 }
 
 .device {
@@ -15,15 +16,18 @@ body {
 	border-radius: 100vh;
 	display: flex;
 	align-items: center;
-	margin: 15px;
-	margin-right: 0px;
-	gap: 0.5rem;
+	margin-bottom: 26px;
+	margin-top: 26px;
+	gap: 12px;
 }
 
 .bigCards{
 	padding: 0.2rem;
+	margin-top: 28px;
+	margin-left: 72px;
 	width: calc(100vw - 16px); /* default body margin : 8px. left and right total 16px */
 	height: 340px;
+	gap: 24px;
 	overflow: scroll;
 	display: flex;
 } 
