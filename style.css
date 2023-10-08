@@ -2,76 +2,39 @@ body {
 	margin: 0px;
 }
 
-nav a {
-	text-decoration: none;
-	color: rgb(95, 99, 104);
-	margin: 10px;
-	font-size: 16px;
-	font-weight: bold;
-	margin-top: 0px;
-	transition: color 0.5s;
-}
-
-nav a:hover {
-	color: rgb(32, 33, 36);
-}
-
-.play_logo {
-	width: 50px;
-	height: 50px;
-	margin: 10px;
-}
-
-nav h2 {
-	display: inline-block;
-	color: rgb(95, 99, 104);
-}
-
-nav div, nav div a, .miscellaneous{
-	display: flex;
-	align-items: center;
-}
-
-.miscellaneous{
-	margin-left: auto;
-}
-
-.miscellaneous button{
-	border: none;
-	background-color: white;
-	margin: 10px;
-}
-
-nav {
-	font-family: 'Roboto', sans-serif;
-}
-
-.material-icons {
-	font-family: 'Material Icons';
-	color: rgb(98, 102, 107);
-}
-
 .devices {
 	display: flex;
 	gap: 1rem;
+	margin-left: 72px;
 }
 
 .device {
 	text-decoration: none;
-	color: rgb(82, 81, 81);
+	font-weight: bold;
+	color: rgb(91, 95, 100);
+	font-family: 'Roboto', sans-serif;
 	padding: 0.3rem 1rem;
-	border: solid 0.02rem rgb(114, 114, 114);
+	border: solid 0.02rem rgb(218, 220, 224);
 	border-radius: 100vh;
 	display: flex;
 	align-items: center;
-	gap: 0.5rem;
+	margin-block: 26px;
+	gap: 12px;
+}
+
+.device .material-icons {
+	font-family: 'Material Icons';
+	font-weight: bold;
+	font-size: 0.9rem;
 }
 
 .bigCards{
 	padding: 0.2rem;
-	margin-top: 30px;
+	margin-top: 28px;
+	margin-left: 72px;
 	width: calc(100vw - 16px); /* default body margin : 8px. left and right total 16px */
 	height: 340px;
+	gap: 24px;
 	overflow: scroll;
 	display: flex;
 } 
