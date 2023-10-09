@@ -37,3 +37,37 @@
 	top: 50%;
 	translate: -50% -50%;
 }
+
+
+.categorised_card .info{
+	display: flex;
+	gap: 1rem;
+}
+
+.categorised_card .info .logo{
+	width: 18%;
+	aspect-ratio: 1;
+	border-radius: 0.5rem;
+	background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjIScPpA_gy0sj3DGadhs32BMxYe187GZeqg&usqp=CAU);
+	background-position: center;
+	background-size: cover;
+	box-shadow: 0 0 2px 1px grey;
+}
+
+.categorised_card .info .text{
+	display: flex;
+	flex-direction: column;
+	gap: 0.3rem
+}
+
+.categorised_card .info .text span:nth-child(1){
+	line-height: 1.2rem;
+	font-weight: 850;
+}
+
+.categorised_card .info .text span:nth-child(2){
+	line-height: 1.2rem;
+	font-size: 0.9em;
+	font-weight: 600;
+	color: rgb(99, 98, 98);
+}
