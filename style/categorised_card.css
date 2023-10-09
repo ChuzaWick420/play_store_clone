@@ -1,0 +1,8 @@
+.categorised_card_container{
+	width: 380px;
+	aspect-ratio: 380/350;
+	margin: 72px;
+	position: relative;
+	border-radius: 1rem;
+	font-family: 'Roboto', sans-serif;
+}
