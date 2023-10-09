@@ -10,3 +10,12 @@
 .categorised_card_container:hover{
 	background-color: rgba(226, 226, 226, 0.322);
 }
+
+.categorised_card{
+	border-radius: 0.5rem;
+	position: absolute;
+	inset: 15px;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
