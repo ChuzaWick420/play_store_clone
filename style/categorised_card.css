@@ -19,3 +19,21 @@
 	flex-direction: column;
 	gap: 1rem;
 }
+
+
+.categorised_card .video{
+	border-radius: inherit;
+	background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMxGm670hMsTclmzRPpa6K0zPYZmubrOeZ5A&usqp=CAU);
+	background-position: center;
+	background-size: cover;
+	height: 70%;
+	position: relative;
+}
+
+.categorised_card .video svg{
+	width: 18%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	translate: -50% -50%;
+}
