@@ -6,3 +6,7 @@
 	border-radius: 1rem;
 	font-family: 'Roboto', sans-serif;
 }
+
+.categorised_card_container:hover{
+	background-color: rgba(226, 226, 226, 0.322);
+}
