@@ -1,0 +1,8 @@
+.devices, .features, nav, h4, h6 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.material-icons {
+	font-family: 'Material Icons';
+	color: rgb(98, 102, 107);
+}
