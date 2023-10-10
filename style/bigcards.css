@@ -4,7 +4,6 @@
 	margin-left: 72px;
 	width: calc(100vw - 16px); /* default body margin : 8px. left and right total 16px */
 	height: 340px;
-	gap: 24px;
 	overflow: scroll;
 	display: flex;
 } 
@@ -16,14 +15,51 @@
 .bigCard{
 	width: 450px;
 	aspect-ratio: 4/3;
-	border-radius: 1rem;
+	border-radius: 0.5rem;
 	outline: solid 1px;
-	position: relative;
+	/* position: relative; */
 }
 
-.bigCardImgHolder{
-	position: absolute;
+.img_container {
+	border-radius: 0.5rem;
+	/* position: relative; */
+	/* inset: 0px; */
+	width: 100%;
+	height: calc(450px * (364/648));
+}
+
+.img_container img {
+	width: 100%;
+}
+
+.title_container {
+	/* position: relative; */
+	height: 87px;
 	background-color: red;
-	inset: 2%;
-	border-radius: calc(1rem - 2%);
+	display: flex;
+	/* align-content: center; */
+	/* overflow: auto; */
+}
+
+.title_container h4, .title_container h6 {
+	/* align-self: center; */
+	margin: 0px;
+	height: fit-content;
+	display: block;
+	color: white;
+}
+
+.title_container img {
+	margin: 20px;
+	border-radius: 5px;
+}
+
+.title_container > div {
+	display:flex;
+	align-content: center;
+
+}
+
+.game_details {
+	margin-block: auto;
 }
