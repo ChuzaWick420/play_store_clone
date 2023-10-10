@@ -20,6 +20,17 @@
 	/* position: relative; */
 }
 
+.game_card{
+	position: relative;	
+/*	
+	subtitle_container can target it as a reference.
+	So it can float using absolute position.
+	Later it is given a size.
+	So the div containing data can use 'bottom' to float.
+	It also uses absolute position
+*/
+}
+
 .img_container {
 	/* position: relative; */
 	/* inset: 0px; */
@@ -79,4 +90,30 @@ h6 img {
 
 .txt_separator {
 	margin-inline: 5px;
+}
+
+.subtitle_container {
+	position: absolute;
+	width: 100%;
+	height: calc(450px * (364/648));
+}
+
+.subtitle_container>div {
+	width: 100%;
+	position: absolute;
+	bottom: 5px;
+	
+	/* 20px is the margin of the title_container's image */
+	left: 20px;
+}
+
+.subtitle_container h3, .subtitle_container h4 {
+	margin: 0px;
+	
+/*	gave it some padding so it wraps 
+	even though it is slightly towards right*/
+	padding-right: 20px;
+	display: block;
+	word-wrap: break-word;
+	color: yellow;
 }
