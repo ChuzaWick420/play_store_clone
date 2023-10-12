@@ -2,7 +2,13 @@
 	padding: 0.2rem;
 	margin-top: 28px;
 	margin-left: 72px;
-	width: calc(100vw - 16px); /* default body margin : 8px. left and right total 16px */
+
+/* 	default body margin: 8px.
+	gap from sides: 72px.
+
+	Parameters are multiplied by 2 (left AND right)
+*/
+	width: calc(100vw - 2*8px - 2*72px);
 	height: 340px;
 	overflow: scroll;
 	display: flex;
@@ -16,12 +22,12 @@
 	width: 450px;
 	aspect-ratio: 4/3;
 	border-radius: 0.5rem;
-	outline: solid 1px;
+	/* outline: solid 1px; */
 	/* position: relative; */
 }
 
 .game_card{
-	position: relative;	
+	/* position: relative; */
 /*	
 	subtitle_container can target it as a reference.
 	So it can float using absolute position.
@@ -29,16 +35,17 @@
 	So the div containing data can use 'bottom' to float.
 	It also uses absolute position
 */
+	padding: 10px;
 }
 
 .img_container {
-	/* position: relative; */
+	position: relative;
 	/* inset: 0px; */
 	width: 100%;
 	height: calc(450px * (364/648));
 }
 
-.img_container img {
+.img_container {
 	width: 100%;
 	border-top-left-radius: 0.5rem;
 	border-top-right-radius: 0.5rem;
@@ -46,23 +53,27 @@
 
 .title_container {
 	/* position: relative; */
-	height: 87px;
-	background-color: red;
+	height: 10%;
+	/* background-color: rgb(238, 237, 236); */
 	display: flex;
+	border-radius: 0px 0px 5px 5px;
 	/* align-content: center; */
 	/* overflow: auto; */
 }
 
 .title_container h4, .title_container h6 {
 	/* align-self: center; */
-	margin: 0px;
+	margin-block: 10px;
 	height: fit-content;
 	display: block;
-	color: white;
 }
 
 .title_container > img {
-	margin: 20px;
+	align-self: center;
+	margin: 5px;
+	margin-left: 20px;
+	width: 10%;
+	height: 10%;
 	border-radius: 5px;
 }
 
@@ -79,8 +90,27 @@
 .features {
 	margin-left: auto;
 	margin-right: 10px;
-	color: white;
 	font-size: 12px;
+	display: flex;
+	flex-direction: column;
+}
+
+.features button {
+	background-color: rgb(5, 155, 113);
+	color:white;
+	padding-block: 5px;
+	padding-inline: 50px;
+	margin-inline: auto;
+	width: fit-content;
+	/* margin-inline: auto; */
+	border: none;
+	border-radius: 5px;
+}
+
+.features p {
+	padding-inline: 30px;
+	margin-block: 5px;
+	font-size: 10px;
 }
 
 h6 img {
@@ -93,8 +123,8 @@ h6 img {
 }
 
 .subtitle_container {
-	position: absolute;
 	width: 100%;
+	position: absolute;
 	height: calc(450px * (364/648));
 }
 
@@ -109,11 +139,77 @@ h6 img {
 
 .subtitle_container h3, .subtitle_container h4 {
 	margin: 0px;
-	
+	width: calc(100% - 20px);
 /*	gave it some padding so it wraps 
 	even though it is slightly towards right*/
-	padding-right: 20px;
+	/* padding-right: 20px; */
 	display: block;
 	word-wrap: break-word;
-	color: yellow;
+}
+
+/*****************Customize background******************/
+.mobile_legends .img_container {
+	background-image: url("../img/mobile_legends_card.png");
+	background-size: cover;
+}
+
+.bullet_echo .img_container {
+	background-image: url("../img/bullet_echo_card.png");
+	background-size: cover;
+}
+
+.genshin_impact .img_container {
+	background-image: url("../img/genshin_impact_card.png");
+	background-size: cover;
+}
+
+/*****************Customize gradient******************/
+.mobile_legends .subtitle_container {
+	background-image: linear-gradient(to top, rgb(238, 237, 236) 1%, transparent);
+}
+
+.bullet_echo .subtitle_container {
+	background-image: linear-gradient(to top, rgb(6, 30, 49) 1%, transparent);
+}
+
+.genshin_impact .subtitle_container {
+	background-image: linear-gradient(to top, rgb(59, 97, 152) 1%, transparent);
+}
+
+/*****************Customize title color******************/
+.mobile_legends .title_container {
+	background-color: rgb(238, 237, 236);
+}
+
+.bullet_echo .title_container {
+	background-color: rgb(6, 30, 49);
+}
+
+.genshin_impact .title_container {
+	background-color: rgb(59, 97, 152);
+}
+
+/*****************Customize text color******************/
+.mobile_legends .title_container h4, 
+.mobile_legends .title_container h6,
+.mobile_legends .subtitle_container h3, 
+.mobile_legends .subtitle_container h4,
+.mobile_legends .features p {
+	color: black;
+}
+
+.bullet_echo .title_container h4,
+.bullet_echo .title_container h6,
+.bullet_echo .subtitle_container h3,
+.bullet_echo .subtitle_container h4,
+.bullet_echo .features p {
+	color: white;
+}
+
+.genshin_impact .title_container h4,
+.genshin_impact .title_container h6,
+.genshin_impact .subtitle_container h3,
+.genshin_impact .subtitle_container h4,
+.genshin_impact .features p {
+	color: white;
 }
