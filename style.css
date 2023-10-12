@@ -1,6 +1,17 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+html{
+	scroll-behavior: smooth;
+}
 body {
 	margin: 0px;
+	overflow: hidden;
 }
+
+
 
 .devices {
 	display: flex;
@@ -29,6 +40,8 @@ body {
 }
 
 .bigCards{
+	display: flex;
+	justify-content: center;
 	padding: 0.2rem;
 	margin-top: 28px;
 	margin-left: 72px;
@@ -36,7 +49,6 @@ body {
 	height: 340px;
 	gap: 24px;
 	overflow: scroll;
-	display: flex;
 } 
 
 .bigCards::-webkit-scrollbar{
