@@ -43,6 +43,7 @@
 	/* inset: 0px; */
 	width: 100%;
 	height: calc(450px * (364/648));
+	background-size: cover;
 }
 
 .img_container {
@@ -148,68 +149,51 @@ h6 img {
 }
 
 /*****************Customize background******************/
-.mobile_legends .img_container {
+.bigCard:nth-child(1) .img_container {
 	background-image: url("../img/mobile_legends_card.png");
-	background-size: cover;
 }
 
-.bullet_echo .img_container {
+.bigCard:nth-child(2) .img_container {
 	background-image: url("../img/bullet_echo_card.png");
-	background-size: cover;
 }
 
-.genshin_impact .img_container {
+.bigCard:nth-child(3) .img_container {
 	background-image: url("../img/genshin_impact_card.png");
-	background-size: cover;
 }
 
 /*****************Customize gradient******************/
-.mobile_legends .subtitle_container {
+.bigCard:nth-child(1) .subtitle_container {
 	background-image: linear-gradient(to top, rgb(238, 237, 236) 1%, transparent);
 }
 
-.bullet_echo .subtitle_container {
+.bigCard:nth-child(2) .subtitle_container {
 	background-image: linear-gradient(to top, rgb(6, 30, 49) 1%, transparent);
 }
 
-.genshin_impact .subtitle_container {
+.bigCard:nth-child(3) .subtitle_container {
 	background-image: linear-gradient(to top, rgb(59, 97, 152) 1%, transparent);
 }
 
 /*****************Customize title color******************/
-.mobile_legends .title_container {
+.bigCard:nth-child(1) .title_container{
 	background-color: rgb(238, 237, 236);
 }
 
-.bullet_echo .title_container {
+.bigCard:nth-child(2) .title_container{
 	background-color: rgb(6, 30, 49);
 }
 
-.genshin_impact .title_container {
+.bigCard:nth-child(3) .title_container{
 	background-color: rgb(59, 97, 152);
 }
 
 /*****************Customize text color******************/
-.mobile_legends .title_container h4, 
-.mobile_legends .title_container h6,
-.mobile_legends .subtitle_container h3, 
-.mobile_legends .subtitle_container h4,
-.mobile_legends .features p {
+.bigCard:nth-child(1) {
 	color: black;
 }
 
-.bullet_echo .title_container h4,
-.bullet_echo .title_container h6,
-.bullet_echo .subtitle_container h3,
-.bullet_echo .subtitle_container h4,
-.bullet_echo .features p {
-	color: white;
-}
-
-.genshin_impact .title_container h4,
-.genshin_impact .title_container h6,
-.genshin_impact .subtitle_container h3,
-.genshin_impact .subtitle_container h4,
-.genshin_impact .features p {
+.bigCard:nth-child(2),
+.bigCard:nth-child(3)
+{
 	color: white;
 }
