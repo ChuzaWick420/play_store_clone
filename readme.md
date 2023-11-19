@@ -1,0 +1,1 @@
+This is a Playstore clone, Used for proffesional Practices to learn git and github by one friend and css by other.
